@@ -67,7 +67,6 @@ An open-source Firebase alternative. It handles authentication, database access,
 ## 🔍 What Makes This Setup Better
 
 - **Next.js App Router**: Enables modern layout composition, route-based loading, and colocation of logic with components.
-- **Pages Router**: Can still be used for lightweight or legacy pages. The hybrid use gives flexibility during migration or prototyping.
 - **TypeScript** ensures fewer bugs and stronger collaboration through clearer contracts.
 - **Supabase** cuts down on boilerplate for auth, DB, and file storage — and it works seamlessly with PostgreSQL.
 - **Tailwind + ShadCN** means pixel-perfect design, fast iteration, and a professional look with minimal custom CSS.
