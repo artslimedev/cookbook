@@ -1,14 +1,7 @@
 import Hero from "@/components/hero";
-import { Input } from "@/components/ui/input";
 import Search from "../components/search";
-import { Button } from "@/components/ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-} from "@/components/ui/select";
+
+// NEED TO SET UP THE SEARCH FUNCTIONALITY
 
 export default async function Home() {
   return (

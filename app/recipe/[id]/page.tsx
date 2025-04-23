@@ -2,6 +2,8 @@ import { createClient } from "@/utils/supabase/server";
 import Image from "next/image";
 import myImage from "@/assets/dishImages/Cantonese-Salt-and-Pepper-Squid-7-of-9.jpg";
 
+// NEED TO SETUP MOBILE VERSION
+
 type Props = {
   params: Promise<{ id: string }>;
 };

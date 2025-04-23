@@ -1,13 +1,8 @@
 "use client";
 import React from "react";
 import { Input } from "@/components/ui/input";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+
+// NEED TO SETUP SEARC FUNCTIONALITY
 
 export default function Searchbar() {
   const handleSearch = (event: React.FormEvent<HTMLFormElement>) => {
