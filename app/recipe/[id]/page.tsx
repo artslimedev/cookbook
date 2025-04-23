@@ -44,9 +44,9 @@ const RecipePage = async (props: Props) => {
       const ingredientsList = ingredients.map(
         (ingredient: string, index: number) => {
           return (
-            <ol key={`ingredient-${index}`}>
+            <ul className="list-disc pl-6" key={`ingredient-${index}`}>
               <li>{ingredient}</li>
-            </ol>
+            </ul>
           );
         }
       );
@@ -54,22 +54,14 @@ const RecipePage = async (props: Props) => {
     };
 
     const printDirections = () => {
-      const directions = stepList.map((step: string, index: number) => {
+      return stepList.map((step: string, index: number) => {
         return (
-          <ol key={`step-${index}`}>
-            <li className="mb-3">
-              <span className="font-bold">{`${index + 1}. `}</span>
-              {step}
-            </li>
-          </ol>
+          <li key={`step-${index}`} className="mb-3">
+            {step}
+          </li>
         );
       });
-      return directions;
     };
-
-    if (!recipe) {
-      return <div>Recipe not found</div>;
-    }
 
     return (
       <div className="flex flex-col gap-4 px-4">
@@ -77,16 +69,21 @@ const RecipePage = async (props: Props) => {
           {recipe.title}
         </span>
         <div className="flex flex-col gap-y-8">
-          <div className="flex flex-row gap-8 h-[412px]">
-            <div className="flex flex-col gap-y-2 w-1/4 bg-white/40 rounded-2xl h-full text-lg p-4">
-              <span className="text-2xl font-bold">Ingredients:</span>
+          <div className="flex sm:flex-col-reverse sm:gap-4 sm:w-full lg:flex-row lg:gap-8 lg:h-[412px] l">
+            <div className="flex flex-col gap-y-2 sm:w-full lg:w-1/4 bg-white/40 rounded-2xl lg:h-full lg:text-lg p-4">
+              <span className="lg:text-2xl font-bold">Ingredients:</span>
               <div>{printIngredients()}</div>
             </div>
-            <div className="bg-[url('/images/dishes/Cantonese-Salt-and-Pepper-Squid-7-of-9.jpg')] bg-cover bg-center rounded-2xl h-full w-3/4 overflow-hidden"></div>
+            <div
+              className="bg-[url('/images/dishes/Cantonese-Salt-and-Pepper-Squid-7-of-9.jpg')] bg-cover bg-center rounded-2xl h-full w-3/4 overflow-hidden"
+              aria-label="salt & pepper squid image"
+            ></div>
           </div>
           <div className="flex flex-col gap-y-2 bg-white/40 rounded-2xl h-fit p-6">
             <span className="text-2xl font-bold">Directions:</span>
-            <div>{printDirections()}</div>
+            <div>
+              <ol className="list-decimal pl-6">{printDirections()}</ol>
+            </div>
           </div>
         </div>
       </div>
