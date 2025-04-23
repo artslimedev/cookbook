@@ -76,16 +76,18 @@ const RecipePage = async (props: Props) => {
         <span className="text-center text-5xl font-bold capitalize">
           {recipe.title}
         </span>
-        <div className="flex flex-row gap-4 h-[412px]">
-          <div className="flex flex-col gap-y-2 w-1/4 bg-white/40 rounded-lg h-fit text-lg p-4">
-            <span className="text-2xl font-bold">Ingredients:</span>
-            <div>{printIngredients()}</div>
+        <div className="flex flex-col gap-y-8">
+          <div className="flex flex-row gap-8 h-[412px]">
+            <div className="flex flex-col gap-y-2 w-1/4 bg-white/40 rounded-2xl h-full text-lg p-4">
+              <span className="text-2xl font-bold">Ingredients:</span>
+              <div>{printIngredients()}</div>
+            </div>
+            <div className="bg-[url('/images/dishes/Cantonese-Salt-and-Pepper-Squid-7-of-9.jpg')] bg-cover bg-center rounded-2xl h-full w-3/4 overflow-hidden"></div>
           </div>
-          <div className="bg-[url('/images/dishes/Cantonese-Salt-and-Pepper-Squid-7-of-9.jpg')] bg-cover bg-center rounded-lg h-full w-3/4 overflow-hidden"></div>
-        </div>
-        <div className="flex flex-col gap-y-2 bg-white/40 rounded-lg h-fit p-6">
-          <span className="text-2xl font-bold">Directions:</span>
-          <div>{printDirections()}</div>
+          <div className="flex flex-col gap-y-2 bg-white/40 rounded-2xl h-fit p-6">
+            <span className="text-2xl font-bold">Directions:</span>
+            <div>{printDirections()}</div>
+          </div>
         </div>
       </div>
     );
