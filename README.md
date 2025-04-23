@@ -1,4 +1,4 @@
-# 🍽️ Cookbook
+# 🍽️ Slime Cookbook
 
 Cookbook is a modern, full-stack recipe app built with **Next.js**, **TypeScript**, **Tailwind CSS**, **Supabase**, **PostgreSQL**, and **ShadCN UI**. It’s designed to offer a beautiful, responsive interface for browsing, searching, and saving recipes.
 
