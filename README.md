@@ -2,8 +2,6 @@
 
 Cookbook is a modern, full-stack recipe app built with **Next.js**, **TypeScript**, **Tailwind CSS**, **Supabase**, **PostgreSQL**, and **ShadCN UI**. It’s designed to offer a beautiful, responsive interface for browsing, searching, and saving recipes.
 
-Currently a web-only experience, the roadmap includes an iOS version using either **React Native** or **Flutter**, and eventual integration of **GoLang** for backend logic.
-
 ---
 
 ## ✨ Project Summary
@@ -15,6 +13,24 @@ The goal of Cookbook is to make exploring and managing recipes feel as delightfu
 - 🔍 Search recipes by keyword or category
 - 🗂 Organize recipes using custom tags/categories
 - 📱 Access the app on web and (eventually) iOS
+
+---
+
+## 🚧 Current Status
+
+Currently a web-only experience, the UI is being styled using Tailwind and ShadCN, and the structure for authentication and recipe storage via Supabase/PostgreSQL is in progress. The roadmap includes an iOS version using either **React Native** or **Flutter**, and eventual integration of **GoLang** for backend logic.
+
+---
+
+## 🔮 Planned Features
+
+- 🔐 User authentication via Supabase
+- 🧾 Add and edit personal recipes
+- 🔍 Full-text search
+- 🏷️ Filter by categories
+- 📚 Support for complex recipes (e.g., multi-part ingredients)
+- 📱 Native iOS app using React Native or Flutter (TBD)
+- 🧠 GoLang backend for optimized APIs (future)
 
 ---
 
@@ -55,24 +71,6 @@ An open-source Firebase alternative. It handles authentication, database access,
 - **TypeScript** ensures fewer bugs and stronger collaboration through clearer contracts.
 - **Supabase** cuts down on boilerplate for auth, DB, and file storage — and it works seamlessly with PostgreSQL.
 - **Tailwind + ShadCN** means pixel-perfect design, fast iteration, and a professional look with minimal custom CSS.
-
----
-
-## 🚧 Current Status
-
-Cookbook is still under early development. The UI is being styled using Tailwind and ShadCN, and the structure for authentication and recipe storage via Supabase/PostgreSQL is in progress.
-
----
-
-## 🔮 Planned Features
-
-- 🔐 User authentication via Supabase
-- 🧾 Add and edit personal recipes
-- 🔍 Full-text search
-- 🏷️ Filter by categories
-- 📚 Support for complex recipes (e.g., multi-part ingredients)
-- 📱 Native iOS app using React Native or Flutter (TBD)
-- 🧠 GoLang backend for optimized APIs (future)
 
 ---
 
