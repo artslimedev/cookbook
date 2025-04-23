@@ -56,23 +56,23 @@ An open-source Firebase alternative. It handles authentication, database access,
 - **Supabase** cuts down on boilerplate for auth, DB, and file storage — and it works seamlessly with PostgreSQL.
 - **Tailwind + ShadCN** means pixel-perfect design, fast iteration, and a professional look with minimal custom CSS.
 
-## 🚧 Planned Tech
+---
 
-- **Go (planned)** | Will be used in future versions to handle backend services and performance-critical logic.
-- **React Native / Flutter (planned)** | Will power the native iOS app, extending access beyond the web.
+## 🚧 Current Status
+
+Cookbook is still under early development. The UI is being styled using Tailwind and ShadCN, and the structure for authentication and recipe storage via Supabase/PostgreSQL is in progress.
 
 ---
 
-## 📦 Project Status
+## 🔮 Planned Features
 
-- [x] Initial setup with Next.js (App Router), Tailwind, and Supabase
-- [ ] User authentication (Supabase Auth)
-- [ ] Recipe creation and viewing
-- [ ] Category and tag support
-- [ ] Search functionality
-- [ ] Mobile-friendly design
-- [ ] iOS app (React Native or Flutter)
-- [ ] GoLang integration for APIs
+- 🔐 User authentication via Supabase
+- 🧾 Add and edit personal recipes
+- 🔍 Full-text search
+- 🏷️ Filter by categories
+- 📚 Support for complex recipes (e.g., multi-part ingredients)
+- 📱 Native iOS app using React Native or Flutter (TBD)
+- 🧠 GoLang backend for optimized APIs (future)
 
 ---
 
