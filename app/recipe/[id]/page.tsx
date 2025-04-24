@@ -71,13 +71,13 @@ const RecipePage = async (props: Props) => {
           {recipe.title}
         </span>
         <div className="w-full flex flex-col-reverse md:flex-row gap-4 lg:gap-8 lg:h-[412px]">
-          <div className="flex flex-col justify-center gap-y-2 bg-white/40 rounded-2xl p-4 md:w-1/2 lg:w-1/4">
+          <div className="flex flex-col justify-center gap-y-2 bg-white/40 rounded-2xl p-6 lg:pt-8 md:w-1/2 md:min-w-fit lg:w-fit">
             <span className="lg:text-2xl font-bold mb-0">Ingredients:</span>
-            <ul className="flex flex-col flex-wrap h-[150px] text-sm md:text-md lg:text-base lg:h-full">
+            <ul className="flex flex-col flex-wrap h-[150px] text-md lg:text-base lg:h-full">
               {printIngredients()}
             </ul>
           </div>
-          <div className="bg-[url('/images/dishes/Cantonese-Salt-and-Pepper-Squid-7-of-9.jpg')] bg-cover bg-center rounded-2xl h-60 w-full md:w-1/2 lg:w-3/4 md:h-60 lg:h-full overflow-hidden" />
+          <div className="bg-[url('/images/dishes/Cantonese-Salt-and-Pepper-Squid-7-of-9.jpg')] bg-cover bg-center rounded-2xl h-60 w-full md:w-1/2 lg:w-3/4 md:h-60 lg:h-full overflow-hidden lg:flex-grow" />
         </div>
         <div className="flex flex-col gap-y-2 bg-white/40 rounded-2xl h-fit p-6">
           <span className="text-2xl font-bold">Directions:</span>
