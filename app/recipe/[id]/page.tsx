@@ -44,7 +44,7 @@ const RecipePage = async (props: Props) => {
 
     const printIngredients = () => {
       return ingredients.map((ingredient: string, index: number) => (
-        <li key={`ingredient-${index}`} className="md:mr-6 lg:mr-0">
+        <li key={`ingredient-${index}`} className="lg:mb-[3px] md:mr-6 lg:mr-0">
           {ingredient}
         </li>
       ));
