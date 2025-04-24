@@ -8,8 +8,8 @@ export default async function Home() {
     <>
       <Hero />
       <main className="flex-1 flex flex-row w-full justify-center">
-        <div className="flex w-3/4 items-center mt-14">
-          <Search />
+        <div className="flex w-full md:w-3/4 items-center mt-14">
+          <Search filter={true} />
         </div>
       </main>
     </>
