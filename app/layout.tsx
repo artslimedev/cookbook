@@ -32,23 +32,23 @@ export default function RootLayout({
     <html lang="en" className={geistSans.className} suppressHydrationWarning>
       <body className="bg-orange-200 text-foreground">
         <nav className="flex px-16 pt-4 pb-0 justify-between items-center bg-orange-200 text-foreground sticky top-0 z-10">
-          <div className="lg:w-1/2 text-3xl">
-            <Link href={"/"} className="hidden lg:block">
+          <div className="w-1/2 text-3xl">
+            <Link href={"/"} className="hidden md:block">
               <span className="font-bold">Slime</span>
               <span className="font-normal"> Cookbook</span>
             </Link>
           </div>
-          <div className="lg:w-1/2 text-base flex justify-end items-center gap-x-8 font-bold">
-            <Link href={"/"} className="hidden lg:block">
+          <div className="w-1/2 text-base flex justify-end items-center gap-x-8 font-bold">
+            <Link href={"/"} className="hidden md:block">
               <span>HOME</span>
             </Link>
-            <Link href={"/recipes"} className="hidden lg:block">
+            <Link href={"/recipes"} className="hidden md:block">
               <span>RECIPES</span>
             </Link>
-            <Link href={"/search"} className="hidden lg:block">
+            <Link href={"/search"} className="hidden md:block">
               <span>SEARCH</span>
             </Link>
-            <Link href={"/about"} className="hidden lg:block">
+            <Link href={"/about"} className="hidden md:block">
               <span>ABOUT</span>
             </Link>
           </div>
