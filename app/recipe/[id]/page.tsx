@@ -66,26 +66,23 @@ const RecipePage = async (props: Props) => {
     };
 
     return (
-      <div className="flex flex-col gap-4 px-4">
-        <span className="text-center text-5xl font-bold capitalize">
+      <div className="flex flex-col gap-4 lg:gap-y-8">
+        <span className="text-center text-3xl lg:text-5xl font-bold capitalize">
           {recipe.title}
         </span>
-        <div className="flex flex-col gap-y-8">
-          <div className="flex sm:flex-col-reverse sm:gap-4 sm:w-full lg:flex-row lg:gap-8 lg:h-[412px] l">
-            <div className="flex flex-col gap-y-2 sm:w-full lg:w-1/4 bg-white/40 rounded-2xl lg:h-full lg:text-lg p-4">
-              <span className="lg:text-2xl font-bold">Ingredients:</span>
-              <div>{printIngredients()}</div>
-            </div>
-            <div
-              className="bg-[url('/images/dishes/Cantonese-Salt-and-Pepper-Squid-7-of-9.jpg')] bg-cover bg-center rounded-2xl h-full w-3/4 overflow-hidden"
-              aria-label="salt & pepper squid image"
-            ></div>
+        <div className="w-full flex flex-col-reverse md:flex-row gap-4 lg:gap-8 lg:h-[412px]">
+          <div className="flex flex-col justify-center gap-y-2 bg-white/40 rounded-2xl p-4 md:w-1/2 lg:w-1/4">
+            <span className="lg:text-2xl font-bold mb-0">Ingredients:</span>
+            <ul className="flex flex-col flex-wrap h-[150px] text-sm md:text-md lg:text-base lg:h-full">
+              {printIngredients()}
+            </ul>
           </div>
-          <div className="flex flex-col gap-y-2 bg-white/40 rounded-2xl h-fit p-6">
-            <span className="text-2xl font-bold">Directions:</span>
-            <div>
-              <ol className="list-decimal pl-6">{printDirections()}</ol>
-            </div>
+          <div className="bg-[url('/images/dishes/Cantonese-Salt-and-Pepper-Squid-7-of-9.jpg')] bg-cover bg-center rounded-2xl h-60 w-full md:w-1/2 lg:w-3/4 md:h-60 lg:h-full overflow-hidden" />
+        </div>
+        <div className="flex flex-col gap-y-2 bg-white/40 rounded-2xl h-fit p-6">
+          <span className="text-2xl font-bold">Directions:</span>
+          <div>
+            <ol className="list-decimal pl-6">{printDirections()}</ol>
           </div>
         </div>
       </div>

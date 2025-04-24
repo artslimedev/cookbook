@@ -53,7 +53,7 @@ export default function RootLayout({
             </Link>
           </div>
         </nav>
-        <main className="lg:p-16 lg:pt-0">{children}</main>
+        <main className="p-4 lg:p-16 lg:pt-0">{children}</main>
       </body>
     </html>
   );
