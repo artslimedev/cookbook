@@ -66,7 +66,7 @@ const RecipePage = async (props: Props) => {
           {recipe.title}
         </span>
         <div className="w-full flex flex-col-reverse md:flex-row gap-4 lg:gap-8 lg:h-[412px]">
-          <div className="flex flex-col justify-center gap-y-2 bg-white/40 rounded-2xl p-6 lg:pt-8 md:w-1/2 md:min-w-fit lg:w-fit">
+          <div className="flex flex-col justify-center gap-y-2 bg-white/40 rounded-2xl p-6 lg:pt-8 md:w-1/2 md:min-w-fit lg:w-fit h-full">
             <span className="lg:text-2xl font-bold mb-0">Ingredients:</span>
             <ul className="list-disc pl-4 flex flex-col flex-wrap h-[150px] text-md lg:text-base lg:h-full">
               {printIngredients()}
