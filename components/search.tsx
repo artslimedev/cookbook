@@ -4,7 +4,12 @@ import { Input } from "@/components/ui/input";
 
 // NEED TO SETUP SEARC FUNCTIONALITY
 
-export default function Searchbar() {
+type Props = {
+  filter?: boolean;
+};
+
+export default function Searchbar(props: Props) {
+  const { filter } = props;
   const handleSearch = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault(); // Prevent the default form submission behavior
     const formData = new FormData(event.currentTarget);
@@ -20,6 +25,7 @@ export default function Searchbar() {
         className="rounded-l-full rounded-r-none w-full"
         type="search"
         placeholder="Search"
+        filter={filter}
       />
     </form>
   );

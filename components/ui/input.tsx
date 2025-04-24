@@ -9,12 +9,15 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { FaSearch } from "react-icons/fa";
 
 export interface InputProps
-  extends React.InputHTMLAttributes<HTMLInputElement> {}
+  extends React.InputHTMLAttributes<HTMLInputElement> {
+  filter?: boolean;
+}
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
-  ({ className, type, ...props }, ref) => {
+  ({ className, type, filter, ...props }, ref) => {
     return (
       <div className="flex w-full items-center">
         <input
@@ -28,24 +31,29 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         />
         {type === "search" && (
           <>
-            <Select>
-              <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="Search Type" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="name">Name</SelectItem>
-                <SelectItem value="meal">Meal</SelectItem>
-                <SelectItem value="category">Category</SelectItem>
-                <SelectItem value="ingredient">Ingredient</SelectItem>
-              </SelectContent>
-            </Select>
-            <Button
-              variant={"other"}
-              className="rounded-r-full rounded-l-none "
-              type="submit"
-            >
-              Search
-            </Button>
+            <div className={`${filter ? `md:block` : "hidden sm:block"}`}>
+              <Select>
+                <SelectTrigger className="w-[100px]">
+                  <SelectValue placeholder="Type" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="name">Name</SelectItem>
+                  <SelectItem value="meal">Meal</SelectItem>
+                  <SelectItem value="category">Category</SelectItem>
+                  <SelectItem value="ingredient">Ingredient</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+            <div className={`${!filter && "bg-white rounded-r-full"}`}>
+              <Button
+                variant={"other"}
+                className={`rounded-r-full ${!filter && "rounded-l-full md:rounded-l-none z-10"} `}
+                type="submit"
+              >
+                <span className="hidden sm:block">Search</span>
+                <FaSearch className="block sm:hidden" />
+              </Button>
+            </div>
           </>
         )}
       </div>
