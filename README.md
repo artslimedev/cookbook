@@ -4,6 +4,12 @@ Cookbook is a modern, full-stack recipe app built with **Next.js**, **TypeScript
 
 ---
 
+## 📷 Screenshots
+
+![Recipe Page](public/images/screenshots/Recipe.png)
+
+---
+
 ## ✨ Project Summary
 
 The goal of Cookbook is to make exploring and managing recipes feel as delightful as cooking itself. Users will be able to:

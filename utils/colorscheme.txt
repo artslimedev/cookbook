@@ -1,0 +1,20 @@
+F3F1ED
+2D2215
+7B541C
+9F6E1F
+FABC24
+
+FEB95F
+EDADC7
+
+https://www.figma.com/color-palette-generator/?colors=FFC777-472A00-FFE6C2-773731-FFE8C7
+
+https://www.figma.com/color-palette-generator/?colors=FFC777-FFE6C2-FFA82C-291800-48CB54
+
+https://www.figma.com/color-palette-generator/?colors=FFC777-192566-FBC6C6-79320C-385975
+
+rgba(255, 199, 119, 0.94)
+
+#ffc777
+
+hsla(35, 100%, 73%, 0.94)

@@ -45,6 +45,9 @@ export default function RootLayout({
             <Link href={"/recipes"} className="hidden md:block">
               <span>RECIPES</span>
             </Link>
+            <Link href={"/add"} className="hidden md:block">
+              <span>ADD</span>
+            </Link>
             <Link href={"/search"} className="hidden md:block">
               <span>SEARCH</span>
             </Link>
